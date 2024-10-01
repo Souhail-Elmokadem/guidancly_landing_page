@@ -149,6 +149,10 @@ p {
   background-color: var(--indigo);
 }
 
+.main-btn.main-btn-2:hover{
+  background-color: var(--indigo);
+  border: 2px var(--indigo) solid;
+}
 @media (max-width: 767px) {
   .main-btn {
     padding: 0 15px;
@@ -837,7 +841,7 @@ p {
   background-position: center bottom;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url('../images/cover.gif');
+  background-image: url('../images/cover-min-min.png');
 }
 
 .shape {
