@@ -81,7 +81,7 @@
                             </button>
 
                             <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
-                                <ul id="nav" class="navbar-nav ml-auto">
+                                <ul id="nav" class="navbar-nav ml-auto" style="align-items: center;" >
                                     <li class="nav-item active">
                                         <a class="page-scroll" href="#home">Home</a>
                                     </li>
@@ -92,14 +92,15 @@
                                         <a class="page-scroll" href="#about">About</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="page-scroll" href="#screenshot">Screenshot</a>
+                                        <a class="page-scroll" href="#getStarted">Get Started</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="page-scroll" href="#pricing">Pricing</a>
+                                        <a class="page-scroll" href="#blog">Impact</a>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="page-scroll" href="#blog">Blog</a>
+                                    <li class="tryit"  style="border:  1px solid rgb(116, 116, 116);border-radius: 30px;padding-left: 20px;padding-right: 20px;padding-top: 10px;padding-bottom: 10px;margin-left: 15px;">
+                                        <a class="page-scroll" style="cursor: pointer;" data-toggle="modal" data-target="#qrModal" >Try it now</a>
                                     </li>
+                                    
                                 </ul>
                             </div> <!-- navbar collapse -->
                         </nav> <!-- navbar -->
@@ -123,8 +124,7 @@
                             <ul>
                                 <!-- <li><a class="main-btn wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1s" href="#">Discover More</a></li> -->
                                 <li>
-                                    <a class="main-btn main-btn-2 wow fadeInUp btn-download" data-wow-duration="1.3s"
-                                        data-wow-delay="1.4s" href="#">
+                                    <a class="main-btn main-btn-2 wow fadeInUp btn-download" data-wow-duration="1.3s" data-wow-delay="1.4s" href="#" data-toggle="modal" data-target="#qrModal">
                                         Download App</a>
                                 </li>
                             </ul>
@@ -142,7 +142,44 @@
     </section>
 
     <!--====== HEADER PART ENDS ======-->
+    <div class="modal fade" id="qrModal" tabindex="-1" role="dialog" aria-labelledby="qrModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body text-center" style="padding: 20px;">
 
+                    <!-- App Logo and Name Section -->
+                    <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 20px;">
+                        <!-- Logo Section -->
+                        <div class="app-logo" style="width: 50px; height: 50px; background-color: blue; border-radius: 16px; display: flex; justify-content: center; align-items: center; margin-right: 10px;">
+                            <p style="font-size: 0.5em; color: white; font-weight: bold;">Guidancly</p>
+                        </div>
+                        
+                        <!-- App Name and Stars Section -->
+                        <div class="app-details">
+                            <p style="font-size: 1em; font-weight: bold; margin: 0;">Guidancly App</p>
+                            <div class="app-rating">
+                                <span>⭐⭐⭐⭐⭐</span> <!-- Replace with actual star icons if necessary -->
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Download Instruction -->
+                    <p style="font-size: 1.2em; margin-bottom: 20px;">Point your smartphone camera at the QR code to download</p>
+                
+                    <!-- QR Code Section -->
+                    <div class="qr-code" style="margin-bottom: 20px;">
+                        <img src="assets/images/qr-code.png" alt="QR Code for app download" class="img-fluid" style="width: 200px;">
+                    </div>
+                    
+                    <!-- Scan QR Code Text -->
+                    <p style="font-size: 0.9em; color: #666;">Scan the QR code with your phone camera to download the Guidancly app</p>
+                
+                </div>
+                
+                
+            </div>
+        </div>
+    </div>
 
     <!--====== FEATURES PART START ======-->
 
@@ -239,7 +276,7 @@
 
     <!--====== VIDEO PART START ======-->
 
-    <section id="video" class="video_area pt-80 pb-80">
+    <section id="getStarted" class="video_area pt-80 pb-80">
         <div class="container">
             <h1 class="text-center">How to get started ?</h1>
             <div class="row align-items-center">
@@ -292,7 +329,7 @@
                             </div>
                         </div>
                        <div style="margin-top: 20;margin-left: 10px;">
-                            <a href="" class="main-btn">Download the app</a>
+                            <a href="" class="main-btn" style="cursor: pointer;" data-toggle="modal" data-target="#qrModal">Download the app</a>
                        </div>
                     </div> <!-- about image -->
                 </div>
@@ -371,7 +408,7 @@
                     <p>Join thousands of explorers! Experience the best tours and hidden gems at your fingertips with Guidancly.</p>
                     <ul>
                         <li>
-                            <a class="d-flex align-items-center" href="#">
+                            <a class="d-flex align-items-center" style="cursor: pointer;" data-toggle="modal" data-target="#qrModal"style="cursor: pointer;" data-toggle="modal" data-target="#qrModal">
                                 <span class="icon">
                                     <i class="lni lni-play-store"></i>
                                 </span>
@@ -382,7 +419,7 @@
                             </a>
                         </li>
                         <li>
-                            <a class="d-flex align-items-center" href="#">
+                            <a class="d-flex align-items-center" style="cursor: pointer;" data-toggle="modal" data-target="#qrModal">
                                 <span class="icon">
                                     <i class="lni lni-apple"></i>
                                 </span>
